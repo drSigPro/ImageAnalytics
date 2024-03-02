@@ -32,7 +32,7 @@ st.markdown(
 uploaded_file = st.file_uploader("Upload an image")
 
 # Kernel Size
-orientations = st.sidebar.slider("Select Number of Orientations", min_value=8, max_value=24, value=8, step = 1)
+orientations = st.sidebar.slider("Select Number of Orientations", min_value=2, max_value=24, value=8, step = 1)
 pixels_per_cell = st.sidebar.slider("Select Number of Pixels per cell", min_value=4, max_value=64, value=8, step=1)
 cells_per_block = st.sidebar.slider("Select Number of Pixels per cell", min_value=1, max_value=7, value=1, step=1)
 hist_eq = st.sidebar.checkbox("Enable Histogram Equalization", value=False)
